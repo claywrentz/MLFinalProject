@@ -50,10 +50,10 @@ def make_prediction(year, mileage, tax, mpg, engine, model, trans, fuel):
 
     usr_input = pd.DataFrame(my_dict, index = [0])
     usr_input.head()
-    st.write("Your vehicle is estimated at $" + str(int(forest_reg.predict(usr_input)[0])))
+    st.subheader("Your vehicle is estimated at $" + "{:,}".format(int(forest_reg.predict(usr_input)[0])))
 
-st.header("Ford Vehicle Price Estimate")
-st.write("Use this estimator to determine the price of your Ford vehicles!")
+st.header("Ford Vehicle Price Estimator")
+st.write("Use this model to estimate how much you can get for your Ford vehicle!")
 
 car = load_car_data()
 car = clean_data(car)
