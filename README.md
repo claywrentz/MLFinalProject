@@ -5,4 +5,4 @@ My original plan was to make a housing price database that would allow you to se
 
 ### Model
 
-I tested three different models on my data: linear regression, decision tree regression, and random forest regression. I used RMSE, $R^2$
+I tested three different models on my data: linear regression, decision tree regression, and random forest regression. I used RMSE, R<sup>2</sup>
